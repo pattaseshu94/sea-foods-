@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PNM SEA FOOS</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#shop" aria-label="PNM Sea Foods home">
+        <span class="brand-mark">FC</span>
+        <span>
+          <strong>PNM SEA FOODS </strong>
+          <small>Seafood delivered fresh</small>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#shop">Shop</a>
+        <a href="#order">Order</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Fresh seafood online market</p>
+          <h1 id="page-title">Sell fish, prawns, crab, and premium seafood online.</h1>
+          <p>
+            A ready starter storefront for taking seafood orders with clean product listings,
+            delivery details, and a simple customer order form.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#shop">Browse seafood</a>
+            <a class="button secondary" href="#order">Place order</a>
+          </div>
+        </div>
+        <div class="hero-panel" aria-label="Today's fresh seafood selection">
+          <img src="assets/PNM sea foods.png" alt="PNM Sea Foods seafood display">
+        </div>
+      </section>
+
+      <section class="stats" aria-label="Store highlights">
+        <div>
+          <strong>Same-day</strong>
+          <span>local delivery</span>
+        </div>
+        <div>
+          <strong>6 AM</strong>
+          <span>fresh catch sourcing</span>
+        </div>
+        <div>
+          <strong>Cleaned</strong>
+          <span>ready-to-cook options</span>
+        </div>
+      </section>
+
+      <section class="section" id="shop" aria-labelledby="shop-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Seafood products</p>
+            <h2 id="shop-title">Fresh items for today</h2>
+          </div>
+          <label class="filter">
+            <span>Category</span>
+            <select id="categoryFilter">
+              <option value="all">All</option>
+              <option value="fish">Fish</option>
+              <option value="prawns">Prawns</option>
+              <option value="crab">Crab</option>
+            </select>
+          </label>
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+
+      <section class="order-band" id="order" aria-labelledby="order-title">
+        <div>
+          <p class="eyebrow">Online order</p>
+          <h2 id="order-title">Prepare a customer order</h2>
+          <p>
+            Select items from the shop, then enter customer details here. This starter stores
+            the order summary on the page so you can connect payment or WhatsApp later.
+          </p>
+        </div>
+        <form class="order-form" id="orderForm">
+          <label>
+            Customer name
+            <input name="name" type="text" placeholder="Full name" required>
+          </label>
+          <label>
+            Phone number
+            <input name="phone" type="tel" placeholder="+91 98765 43210" required>
+          </label>
+          <label>
+            Delivery address
+            <textarea name="address" rows="3" placeholder="House, street, city" required></textarea>
+          </label>
+          <label>
+            Preferred delivery time
+            <select name="time">
+              <option>Today morning</option>
+              <option>Today evening</option>
+              <option>Tomorrow morning</option>
+            </select>
+          </label>
+          <button class="button primary" type="submit">Create order summary</button>
+        </form>
+      </section>
+
+      <aside class="cart" aria-labelledby="cart-title">
+        <div class="cart-header">
+          <div>
+            <p class="eyebrow">Cart</p>
+            <h2 id="cart-title">Current order</h2>
+          </div>
+          <button class="icon-button" id="clearCart" type="button" title="Clear cart" aria-label="Clear cart">x</button>
+        </div>
+        <div id="cartItems" class="cart-items"></div>
+        <div class="cart-total">
+          <span>Total</span>
+          <strong id="cartTotal">Rs 0</strong>
+        </div>
+        <p class="order-summary" id="orderSummary" role="status" aria-live="polite"></p>
+      </aside>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Business details</p>
+          <h2 id="contact-title">Ready for your brand</h2>
+          <p>
+            Replace this information with your seafood business name, local delivery area,
+            payment method, and WhatsApp number.
+          </p>
+        </div>
+        <div class="contact-list">
+          <span>Delivery: 8 AM - 8 PM</span>
+          <span>Phone: +91 9959676116</span>
+          <a href="https://www.google.com/search?sca_esv=4a455b0f3ad2390b&rlz=1C1UEAD_enIN1119IN1119&sxsrf=ANbL-n5eVUByw_gjJ7nCivWUrpuY1kg53A:1781075961872&q=pnm+sea+foods&source=lnms&fbs=ADc_l-byipRaccqV0jmfPhi1DgzPkIbk0HG8UBQNbHd4S9AjVkuc0t6t4dDUPoihiWakL0i6q2BZxOD3Y5tb96YpHp1E4d2UF2H2-5B-g0rDDwBguen1Esd9sutcLSJuRo1csrC70OkIXnbvF65KOMscjhoeQx9naZ7ifNBcGGAx5XbJFUUh1kmOGweYLag9DOuCvBQkYKydZbdvF5U09UNEx_NVicj-hfMFUOGHY9_cHDCYOyZ83zY&sa=X&ved=2ahUKEwir1JmAkfyUAxWdwjgGHSI-EGAQ0pQJegQIEBAB&biw=1536&bih=730&dpr=1.25" target="_blank" rel="noopener">Location: PNM Sea Foods</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
