@@ -11,11 +11,11 @@ const products = [
   },
   {
     id: "pomfret",
-    name: "King Fish",
+    name: "KingFish",
     category: "fish",
     price: 760,
     unit: "kg",
-    image: "assets/king fish.jpg",
+    image: "assets/kingfish.jpg",
     tag: "Fresh catch",
     description: "Soft, mild fish for fry, steam, and special family meals."
   },
@@ -55,7 +55,7 @@ const products = [
     category: "prawns",
     price: 820,
     unit: "kg",
-    image: "assets/tiger prawns.jpg",
+    image: "assets/tiger prawns (2).jpg",
     tag: "Cleaned",
     description: "Large prawns, deveined on request and packed chilled."
   },
@@ -95,17 +95,17 @@ const products = [
     category: "prawns",
     price: 620,
     unit: "kg",
-    image: "assets/tiger prawns.jpg",
+    image: "assets/big prawns.jpg",
     tag: "Fresh prawns",
     description: "Fresh Vannami prawns, cleaned and packed for curry or fry."
   },
   {
     id: "vannami-small",
-    name: "Vannami Small",
+    name: "Vannami small (2)",
     category: "prawns",
     price: 480,
     unit: "kg",
-    image: "assets/tiger prawns.jpg",
+    image: "assets/Small Prawns.jpg",
     tag: "Small size",
     description: "Small Vannami prawns for daily cooking, fry, and gravy orders."
   }
